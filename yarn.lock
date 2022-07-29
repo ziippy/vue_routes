@@ -1445,7 +1445,7 @@
   resolved "https://registry.yarnpkg.com/@vue/cli-plugin-vuex/-/cli-plugin-vuex-5.0.8.tgz#0d4cb3020f9102bea9288d750729dde176c66ccd"
   integrity sha512-HSYWPqrunRE5ZZs8kVwiY6oWcn95qf/OQabwLfprhdpFWAGtLStShjsGED2aDpSSeGAskQETrtR/5h7VqgIlBA==
 
-"@vue/cli-service@~5.0.0":
+"@vue/cli-service@^5.0.8":
   version "5.0.8"
   resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-5.0.8.tgz#cf3f6f1b7bf0fba9cdab86b6bec4f9897f982dac"
   integrity sha512-nV7tYQLe7YsTtzFrfOMIHc5N2hp5lHG2rpYr0aNja9rNljdgcPZLyQRb2YRivTHqTv7lI962UXFURcpStHgyFw==
@@ -1993,6 +1993,11 @@ boolbase@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
+
+bootstrap@3.x.x:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.4.1.tgz#c3a347d419e289ad11f4033e3c4132b87c081d72"
+  integrity sha512-yN5oZVmRCwe5aKwzRj6736nSmKDX7pLYwsXiCj/EYmo16hODaBiT4En5btW/jhBF/seV+XMx3aYwukYC3A49DA==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -5665,18 +5670,6 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
-
-vue-cli-plugin-bootstrap-vue@^0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/vue-cli-plugin-bootstrap-vue/-/vue-cli-plugin-bootstrap-vue-0.8.2.tgz#a2e8d132ef3a8e911377862ce7cfaae8b39d43e3"
-  integrity sha512-PnWIioKYvfV45qsaZarBdrOSZCbKp8sisGp6KfBvTfSl2htHh7Ig7A40Lqqk3WadsSheZWF2fVvo9Dyz29G3vw==
-  dependencies:
-    lodash "^4.17.21"
-
-vue-cli-plugin-bootstrap@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/vue-cli-plugin-bootstrap/-/vue-cli-plugin-bootstrap-0.4.0.tgz#bb4af09ea846afb7df6e52fb588a8b08485aa5a1"
-  integrity sha512-otHhgK8dL9kwXk+fDetxPMlUo6A1thoYuJCiO4JrQr26Ok/y4Lx24uJ2VX2dv6T/G5XQZZYSkEMtWnTBFv2GUA==
 
 vue-eslint-parser@^8.0.1:
   version "8.3.0"
