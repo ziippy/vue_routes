@@ -6,7 +6,7 @@
       <ul>
         <li><router-link to="/home">Home</router-link></li>
         <li><router-link to="/about">About</router-link></li>
-        <li><router-link to="/contacts">Contacts</router-link></li>
+        <li><router-link v-bind:to="{ name:'contacts' }">Contacts</router-link></li>
       </ul>
     </nav>
   </div>
@@ -27,11 +27,11 @@ import VueRouter from 'vue-router';
 const router = new VueRouter({
   routes : [
     { path : '/', component: Home },
-    { path : '/home', component: Home },
-    { path : '/about', component: About },
-    { path : '/contacts', component: Contacts,
+    { path : '/home', name : 'home', component: Home },
+    { path : '/about', name : 'about', component: About },
+    { path : '/contacts', name : 'contacts', component: Contacts,
       children : [
-        { path : ':no', component : ContactByNo },
+        { path : ':no', name : 'contactbyno', component : ContactByNo },
       ]
     },
     //{ path : '/contacts/:no', component: ContactByNo },
