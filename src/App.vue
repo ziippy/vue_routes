@@ -29,9 +29,13 @@ const router = new VueRouter({
     { path : '/', component: Home },
     { path : '/home', component: Home },
     { path : '/about', component: About },
-    { path : '/contacts', component: Contacts },
-    { path : '/contacts/:no', component: ContactByNo },
-    { path : '/contacts/contact', component: ContactByNo }
+    { path : '/contacts', component: Contacts,
+      children : [
+        { path : ':no', component : ContactByNo },
+      ]
+    },
+    //{ path : '/contacts/:no', component: ContactByNo },
+    //{ path : '/contacts/contact', component: ContactByNo }
   ]
 })
 
