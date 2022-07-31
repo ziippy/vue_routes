@@ -47,11 +47,16 @@ export default {
     }
     this.no = reqNo;
   },
-  watch : {
-    '$route' : function(to, from) {
-      this.no = to.params.no;
-    }
+  beforeRouteUpdate(to, from, next) {
+    console.log('** beforeRouteUpdate');
+    this.no = to.params.no;
+    next();
   },
+  // watch : {
+  //   '$route' : function(to, from) {
+  //     this.no = to.params.no;
+  //   }
+  // },
   computed : {
     contact : function() {
       var no = this.no;
