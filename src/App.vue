@@ -33,7 +33,7 @@ const router = new VueRouter({
     { path : '/about', name : 'about', component: About },
     { path : '/contacts', name : 'contacts', component: Contacts,
       children : [
-        { path : ':no', name : 'contactbyno', component : ContactByNo },
+        { path : ':no', name : 'contactbyno', component : ContactByNo, props: true },
       ]
     },
     //{ path : '/contacts/:no', component: ContactByNo },

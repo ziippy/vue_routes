@@ -32,26 +32,27 @@ import contactlist from '../ContactList';
 
 export default {
   name : 'contactbyno',
+  props: ['no'],
   data : function() {
     return {
-      no : 0,
+      //no : 0,
       contacts : contactlist.contacts
     }
   },
-  created : function() {
-    var reqNo = undefined;
-    //rqeNo = this.$route.query.no;
-    //console.log(reqNo);
-    if (reqNo === undefined) {
-      reqNo = this.$route.params.no;
-    }
-    this.no = reqNo;
-  },
-  beforeRouteUpdate(to, from, next) {
-    console.log('** beforeRouteUpdate');
-    this.no = to.params.no;
-    next();
-  },
+  // created : function() {
+  //   var reqNo = undefined;
+  //   //rqeNo = this.$route.query.no;
+  //   //console.log(reqNo);
+  //   if (reqNo === undefined) {
+  //     reqNo = this.$route.params.no;
+  //   }
+  //   this.no = reqNo;
+  // },
+  // beforeRouteUpdate(to, from, next) {
+  //   console.log('** beforeRouteUpdate');
+  //   this.no = to.params.no;
+  //   next();
+  // },
   // watch : {
   //   '$route' : function(to, from) {
   //     this.no = to.params.no;
